@@ -1,0 +1,220 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/gg.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+
+  /* ==========================================================================
+     Navbar Style
+      ========================================================================== */
+      /* .navbar{
+        box-shadow: 0 8px 9px 0 rgba(0,0,0,0.24),0 10px 15px 0 rgba(0,0,0,0.19);
+        color: white;
+        background: white;
+      }
+      .navbar-brand {
+        position: relative;
+        padding: 0px;
+        height: 10%;
+        
+      } */
+      /* ==========================================================================
+  Navbar Style
+   ========================================================================== */
+.navbar{
+  box-shadow: 0 8px 9px 0 rgba(0,0,0,0.24),0 10px 15px 0 rgba(0,0,0,0.19);
+  position: absolute;
+}
+.navbar-brand {
+  position: relative;
+  padding: 0px;
+  height: 10%;
+  
+}
+
+.top-nav-collapse {
+  background: #fff;
+  z-index: 999999;
+  top: 0px !important;
+  padding: 12px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  background: #fff !important;
+  box-shadow: 0 8px 9px 0 rgba(0,0,0,0.24),0 10px 15px 0 rgba(0,0,0,0.19);
+}
+
+.top-nav-collapse .navbar-brand {
+  top: 0px;
+}
+
+.top-nav-collapse .navbar-nav .nav-link {
+  color: #333 !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.top-nav-collapse .navbar-nav .nav-link:hover {
+  color: #962727 !important;
+}
+
+.top-nav-collapse .navbar-nav .nav-link.active {
+  color: #fff !important;
+}
+
+.indigo {
+  background: transparent;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: rgb(17, 17, 17);
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 40px;
+  border-radius: 30px;
+  background: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav li a:hover,
+.navbar-expand-lg .navbar-nav li .active > a,
+.navbar-expand-lg .navbar-nav li a:focus {
+  color: #962727;
+}
+
+.navbar .nav-link.active {
+  color: #fff !important;
+  background: #962727;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.slicknav_btn {
+  border: 2px solid;
+  border-color: #962727;
+  border-radius: 5px;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+  background: #962727;
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  #nav-main li a.nav-link {
+    padding-top: 18px;
+  }
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-header {
+    width: 100%;
+  }
+  .navbar-brand {
+    position: absolute;
+    padding: 15px;
+    top: 0;
+  }
+  .navbar-brand img {
+    width: 70%;
+  }
+  #mobile-menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+  .slicknav_nav .active a {
+    background: rgb(255, 255, 255);
+    color: #962727;
+    border-radius: 20px;
+  }
+  .slicknav_nav a:hover, .slicknav_nav .active {
+    color: rgb(255, 255, 255);
+    background: #962727;
+    border-radius: 20px;
+  }
+
+  .slicknav_nav .dropdown li a.active {
+    background: #962727;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+}
+
+      @media only screen and (max-width: 980px) { 
+ 
+        #footer2 {
+          display: none;
+        } 
+      }
+      @media only screen and (min-width: 980px) { 
+         
+        #footer3 {
+          display: none;
+        }
+      }
+      #footerstyle {
+        background: linear-gradient(90deg, #962727 57%, #fff 43%);
+      } 
+      .footer2{
+        background: white;
+        justify-content: center;
+      }
